@@ -8,4 +8,4 @@
 
 3. React has a **One-Way Data Flow**
 
-4. We have **Component State** in native React. This means we can manage state data or changes that are happening in our application, but they're controlled at a *component* level 
+4. We have **Component State** in native React. This means we can manage state data or changes that are happening in our application, but they're controlled at a *component* level
