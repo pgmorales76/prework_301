@@ -40,7 +40,7 @@ Through those component trees, in React, data flows down, one way. This means da
 
 [Data Flow in React](https://youtu.be/FRjlF74_EZk?si=qzFVpWuGhNmnTLb3&t=508)
 
-## State Exists at a ***component level*** & is passed down
+## State Exists at a ***Component Level*** & is passed down
 
 Within a component tree, data may be passed to the children of the parent component, but cannot be passed to sibling components. In other words, a component may only pass data down to components which are nested within it. That State, and that Data, only belongs to the parent, and children, components it passes data down into
 
