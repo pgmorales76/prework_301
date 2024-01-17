@@ -10,7 +10,7 @@
 
 4. We have **Component State** in native React. This means we can manage state data or changes that are happening in our application, but they're controlled at a *component* level
 
-## React is an Agnostic UI Library
+## React is an ***Agnostic UI*** Library
 
 React is agnostic, in the sense it believes in a higher power, just not in the presentation given by, for example, any of the Abrahamic religions . . . ***JUST KIDDING***
 
