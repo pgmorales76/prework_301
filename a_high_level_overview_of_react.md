@@ -16,7 +16,6 @@ React is agnostic, in the sense it believes in a higher power, just not in the p
 
 React is an **agnostic** (React doesn't care where your User Interface will, ultimately, display) User Interface (UI) library. For purposes of web development, React will be used in conjunction with ReactDOM, a companion library used to display the UI in the browser
 
-
 ## A React Element is ***NOT*** a DOM Element
 
 A React element isn't a DOM element UNTIL it's passed through ReactDOM, In React, an element is a JS object
