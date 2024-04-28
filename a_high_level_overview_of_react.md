@@ -18,7 +18,7 @@ React is an **agnostic** (React doesn't care where your User Interface will, ult
 
 ## A React Element is ***NOT*** a DOM Element
 
-A React element isn't a DOM element UNTIL it's passed through ReactDOM, In React, an element is a JS object
+A React element isn't a DOM element UNTIL it's passed through ReactDOM. In React, an element is a native JS object
 
 ## React is an agnostic ***User Interface (UI)*** Library
 
