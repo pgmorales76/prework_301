@@ -43,7 +43,7 @@ Arrow functions can be `async` by prefixing the expression with the `async` keyw
     async param => expression
 
     async (param1, param2, ...paramN) => {
-    statements
+        statements
     }
 
 ## Description
