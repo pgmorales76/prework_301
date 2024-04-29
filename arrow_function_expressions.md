@@ -149,6 +149,39 @@ Arrow functions are always unnamed. If the arrow function needs to call itself, 
 
 ### Function Body
 
+Arrow functions can have either an *expression body* or the usual *block body*.
+
+In an expression body, only a single expression is specified, which becomes the implicit return value. In a block body, you must use an explicit `return` statement.
+
+    const func = (x) => x * x;
+    // expression body syntax, implied "return"
+
+    const func2 = (x, y) => {
+        return x + y;
+    };
+    // with block body, explicit "return" needed
+
+Returning object literals using the expression body syntax `(params) => { object: literal }` does not work as expected.
+
+    const func = () => { foo: 1 };
+    // Calling func() returns undefined!
+
+    const func2 = () => { foo: function () {} };
+    // SyntaxError: function statement requires a name
+
+    const func3 = () => { foo() {} };
+    // SyntaxError: Unexpected token '{'
+
+This is because JavaScript only sees the arrow function as having an expression body if the token following the arrow is not a left brace, so the code inside braces ({}) is parsed as a sequence of statements, where `foo` is a label, not a key in an object literal.
+
+To fix this, wrap the object literal in parentheses:
+
+    const func = () => ({ foo: 1 });
+
+### Cannot be used as methods
+
+
+
 ## Examples
 
 [Arrow Function Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
