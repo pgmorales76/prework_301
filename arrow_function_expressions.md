@@ -86,12 +86,12 @@ The following codeblock will illustrate the decoposition of a traditional functi
 
     // Traditional anonymous function
     (function (a) {
-      return a + 100;
+        return a + 100;
     });
 
     // 1. Remove the word "function" and place arrow between the argument and opening body brace
     (a) => {
-      return a + 100;
+        return a + 100;
     };
 
     // 2. Remove the body braces and word "return" — the return is implied.
@@ -106,7 +106,7 @@ The parentheses can only be omitted if the function has a single simple paramete
 
     // Traditional anonymous function - notice the parentheses around the entire function declaration?
     (function (a, b) {
-      return a + b + 100;
+        return a + b + 100;
     });
 
     // Arrow function
@@ -117,7 +117,7 @@ The parentheses can only be omitted if the function has a single simple paramete
 
     // Traditional anonymous function (no parameters)
     (function () {
-      return a + b + 100;
+        return a + b + 100;
     });
 
     // Arrow function (no parameters)
@@ -127,21 +127,21 @@ The braces can only be omitted if the function directly returns an expression. I
 
     // Traditional anonymous function
     (function (a, b) {
-      const chuck = 42;
-      return a + b + chuck;
+        const chuck = 42;
+        return a + b + chuck;
     });
 
     // Arrow function
     (a, b) => {
-      const chuck = 42;
-      return a + b + chuck;
+        const chuck = 42;
+        return a + b + chuck;
     };
 
 Arrow functions are always unnamed. If the arrow function needs to call itself, use a named function expression instead. You can also assign the arrow function to a variable so it has a name.
 
 // Traditional Function
 function bob(a) {
-return a + 100;
+    return a + 100;
 }
 
 // Arrow Function (similar to the one given at the top)
