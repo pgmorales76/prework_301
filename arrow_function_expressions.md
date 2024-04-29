@@ -139,13 +139,13 @@ The braces can only be omitted if the function directly returns an expression. I
 
 Arrow functions are always unnamed. If the arrow function needs to call itself, use a named function expression instead. You can also assign the arrow function to a variable so it has a name.
 
-// Traditional Function
-function bob(a) {
-    return a + 100;
-}
+    // Traditional Function
+    function bob(a) {
+        return a + 100;
+    }
 
-// Arrow Function (similar to the one given at the top)
-const bob2 = (a) => a + 100;
+    // Arrow Function (similar to the one given at the top)
+    const bob2 = (a) => a + 100;
 
 ### Function Body
 
