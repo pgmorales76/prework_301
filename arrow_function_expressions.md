@@ -149,8 +149,6 @@ Arrow functions are always unnamed. If the arrow function needs to call itself, 
 
 ### Function Body
 
-
-
 ## Examples
 
 [Arrow Function Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
