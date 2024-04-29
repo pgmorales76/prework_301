@@ -53,7 +53,7 @@ Here are some syntax examples of function expressions:
     function (param0, param1) {
       statements
     }
-    function (param0, param1, /* …, */ paramN) {
+    function (param0, param1, /*…,*/ paramN) {
       statements
     }
 
@@ -68,8 +68,6 @@ Here are some syntax examples of function expressions:
     }
 
 An arrow function expression is the same as above, but in a compact (arrow) form
-
-
 
 ## Examples
 
