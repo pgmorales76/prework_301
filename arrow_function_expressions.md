@@ -30,7 +30,7 @@ It has some semantic differences and deliberate limitations in usage:
       statements
     }
 
-Rest parameters, default parameters, and destructuring within params are supported, and always require parentheses
+Rest parameters, default parameters, and destructuring within params are supported, and always require parentheses.
 
     (a, b, ...r) => expression
 
