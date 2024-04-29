@@ -31,31 +31,31 @@ It has some semantic differences and deliberate limitations in usage:
     }
 
 Rest parameters, default parameters, and destructuring within params are supported, and always require parentheses:
-    (a, b, ...r) => expression
-    (a = 400, b = 20, c) => expression
-    ([a, b] = [10, 20]) => expression
-    ({ a, b } = { a: 10, b: 20 }) => expression
+(a, b, ...r) => expression
+(a = 400, b = 20, c) => expression
+([a, b] = [10, 20]) => expression
+({ a, b } = { a: 10, b: 20 }) => expression
 
 Arrow functions can be `async` by prefixing the expression with the `async` keyword.
-    async param => expression
-    async (param1, param2, ...paramN) => {
-      statements
-    }
+async param => expression
+async (param1, param2, ...paramN) => {
+statements
+}
 
 ## Description
 
 A **function expression** is a function, defined within an expression, that expression being, among other kinds, a value assigned to a variable.
 
 Here are some syntax examples of function expressions:
-    function (param0) {
-      statements
-    }
-    function (param0, param1) {
-      statements
-    }
-    function (param0, param1, /*…,*/ paramN) {
-      statements
-    }
+function (param0) {
+statements
+}
+function (param0, param1) {
+statements
+}
+function (param0, param1, /_…,_/ paramN) {
+statements
+}
 
     function name(param0) {
       statements
@@ -125,6 +125,16 @@ The braces can only be omitted if the function directly returns an expression. I
       const chuck = 42;
       return a + b + chuck;
     };
+
+Arrow functions are always unnamed. If the arrow function needs to call itself, use a named function expression instead. You can also assign the arrow function to a variable so it has a name.
+
+// Traditional Function
+function bob(a) {
+return a + 100;
+}
+
+// Arrow Function (similar to the one given at the top)
+const bob2 = (a) => a + 100;
 
 ## Examples
 
