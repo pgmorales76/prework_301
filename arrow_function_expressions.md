@@ -147,6 +147,10 @@ function bob(a) {
 // Arrow Function (similar to the one given at the top)
 const bob2 = (a) => a + 100;
 
+### Function Body
+
+
+
 ## Examples
 
 ## Specifications
