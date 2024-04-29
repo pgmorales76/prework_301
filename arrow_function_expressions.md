@@ -178,7 +178,7 @@ To fix this, wrap the object literal in parentheses:
 
     const func = () => ({ foo: 1 });
 
-### Cannot be used as methods
+### Cannot Be Used As Methods
 
 
 
