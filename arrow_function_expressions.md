@@ -144,7 +144,7 @@ Arrow functions are always unnamed. If the arrow function needs to call itself, 
         return a + 100;
     }
 
-    // Arrow Function (similar to the one given at the top)
+    // Arrow Function
     const bob2 = (a) => a + 100;
 
 ### Function Body
