@@ -93,7 +93,7 @@ In the example above, both the parentheses around the parameter and the braces a
 
 The parentheses can only be omitted if the function has a single simple parameter. If it has multiple parameters, no parameters, or default, destructured, or rest parameters, the parentheses around the parameter list are required.
 
-    // Traditional anonymous function
+    // Traditional anonymous function - notice the parentheses around the entire function declaration?
     (function (a, b) {
       return a + b + 100;
     });
@@ -112,7 +112,19 @@ The parentheses can only be omitted if the function has a single simple paramete
     // Arrow function (no parameters)
     () => a + b + 100;
 
+The braces can only be omitted if the function directly returns an expression. If the body has additional lines of processing, the braces are required — and so is the return keyword. Arrow functions cannot guess what or when you want to return.
 
+    // Traditional anonymous function
+    (function (a, b) {
+      const chuck = 42;
+      return a + b + chuck;
+    });
+
+    // Arrow function
+    (a, b) => {
+      const chuck = 42;
+      return a + b + chuck;
+    };
 
 ## Examples
 
