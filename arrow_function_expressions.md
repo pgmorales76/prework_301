@@ -50,9 +50,11 @@ Here are some syntax examples of function expressions:
     function (param0) {
     statements
     }
+
     function (param0, param1) {
     statements
     }
+
     function (param0, param1, /_…,_/ paramN) {
     statements
     }
@@ -60,9 +62,11 @@ Here are some syntax examples of function expressions:
     function name(param0) {
       statements
     }
+
     function name(param0, param1) {
       statements
     }
+    
     function name(param0, param1, /* …, */ paramN) {
       statements
     }
