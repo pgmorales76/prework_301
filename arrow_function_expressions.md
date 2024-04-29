@@ -44,6 +44,33 @@ Arrow functions can be `async` by prefixing the expression with the `async` keyw
 
 ## Description
 
+A **function expression** is a function, defined within an expression, that expression being, among other kinds, a value assigned to a variable
+
+Here are some syntax examples of function expressions:
+    function (param0) {
+      statements
+    }
+    function (param0, param1) {
+      statements
+    }
+    function (param0, param1, /* …, */ paramN) {
+      statements
+    }
+
+    function name(param0) {
+      statements
+    }
+    function name(param0, param1) {
+      statements
+    }
+    function name(param0, param1, /* …, */ paramN) {
+      statements
+    }
+
+An arrow function expression is the same as above, but in a compact (arrow) form
+
+
+
 ## Examples
 
 ## Specifications
