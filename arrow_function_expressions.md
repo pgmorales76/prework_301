@@ -1,6 +1,6 @@
 # Arrow Function Expressions
 
-An arrow function expression is a compact alternative to a traditional function expression
+An arrow function expression is a compact alternative to a traditional function expression.
 
 It has some semantic differences and deliberate limitations in usage:
 
@@ -44,7 +44,7 @@ Arrow functions can be `async` by prefixing the expression with the `async` keyw
 
 ## Description
 
-A **function expression** is a function, defined within an expression, that expression being, among other kinds, a value assigned to a variable
+A **function expression** is a function, defined within an expression, that expression being, among other kinds, a value assigned to a variable.
 
 Here are some syntax examples of function expressions:
     function (param0) {
@@ -67,9 +67,52 @@ Here are some syntax examples of function expressions:
       statements
     }
 
-An arrow function expression is the same as above, but in a compact (arrow) form
+An arrow function expression is the same as above, but in a compact (arrow) form.
 
-A `function` expression is very similar to, and has almost the same syntax as, a `function` declaration. The main difference between a `function` expression and a `function` declaration is the `function` name, which can be omitted in `function` expressions to create anonymous functions. A `function` expression can be used as an IIFE (Immediately Invoked Function Expression) which runs as soon as it is defined
+A `function` expression is very similar to, and has almost the same syntax as, a `function` declaration. The main difference between a `function` expression and a `function` declaration is the `function` name, which can be omitted in `function` expressions to create anonymous functions. A `function` expression can be used as an IIFE (Immediately Invoked Function Expression) which runs as soon as it is defined.
+
+The following codeblock will illustrate the decoposition of a traditional function expression down to the simplest arrow function, step-by-step
+
+    // Traditional anonymous function
+    (function (a) {
+      return a + 100;
+    });
+
+    // 1. Remove the word "function" and place arrow between the argument and opening body brace
+    (a) => {
+      return a + 100;
+    };
+
+    // 2. Remove the body braces and word "return" — the return is implied.
+    (a) => a + 100;
+
+    // 3. Remove the parameter parentheses
+    a => a + 100;
+
+In the example above, both the parentheses around the parameter and the braces around the function body may be omitted. However, they can only be omitted in certain cases.
+
+The parentheses can only be omitted if the function has a single simple parameter. If it has multiple parameters, no parameters, or default, destructured, or rest parameters, the parentheses around the parameter list are required.
+
+    // Traditional anonymous function
+    (function (a, b) {
+      return a + b + 100;
+    });
+
+    // Arrow function
+    (a, b) => a + b + 100;
+
+    const a = 4;
+    const b = 2;
+
+    // Traditional anonymous function (no parameters)
+    (function () {
+      return a + b + 100;
+    });
+
+    // Arrow function (no parameters)
+    () => a + b + 100;
+
+
 
 ## Examples
 
