@@ -30,7 +30,8 @@ It has some semantic differences and deliberate limitations in usage:
       statements
     }
 
-Rest parameters, default parameters, and destructuring within params are supported, and always require parentheses:
+Rest parameters, default parameters, and destructuring within params are supported, and always require parentheses
+
     (a, b, ...r) => expression
 
     (a = 400, b = 20, c) => expression
@@ -40,6 +41,7 @@ Rest parameters, default parameters, and destructuring within params are support
     ({ a, b } = { a: 10, b: 20 }) => expression
 
 Arrow functions can be `async` by prefixing the expression with the `async` keyword.
+
     async param => expression
 
     async (param1, param2, ...paramN) => {
@@ -51,6 +53,7 @@ Arrow functions can be `async` by prefixing the expression with the `async` keyw
 A **function expression** is a function, defined within an expression, that expression being, among other kinds, a value assigned to a variable.
 
 Here are some syntax examples of function expressions:
+
     function (param0) {
         statements
     }
