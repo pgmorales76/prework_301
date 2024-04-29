@@ -52,15 +52,15 @@ A **function expression** is a function, defined within an expression, that expr
 
 Here are some syntax examples of function expressions:
     function (param0) {
-    statements
+        statements
     }
 
     function (param0, param1) {
-    statements
+        statements
     }
 
     function (param0, param1, /_…,_/ paramN) {
-    statements
+        statements
     }
 
     function name(param0) {
