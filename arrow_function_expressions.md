@@ -8,12 +8,6 @@ It has some semantic differences and deliberate limitations in usage:
 - Arrow functions cannot be used as constructors. Calling them with `new` throws a `TypeError`. They also don't have access to the `new.target` keyword.
 - Arrow functions cannot use `yield` within their body and cannot be created as generator functions.
 
-ES6 has introduced arrow functions which have three main benefits.
-
-1. They have a concise syntax.
-2. They have implicit returns, which allows us to write these nifty one-liners.
-3. They don't rebind the value of `this` when you use a arrow function inside of another function, which is really helpful for when you're doing things like click handlers and whatnot.
-
 ## Syntax
 
     () => expression
@@ -206,5 +200,15 @@ The `this` context is not reset within an arrow function. The value of `this` is
 This happens because arrow functions retain the `this` value of the enclosing functional scope. Therefore, you will want to avoid using an arrow function in a constructor (where we need the contextual `this` to be the object we are building) or any method that needs to use `this` to behave properly.
 
 [Arrow Function Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+
+## JavaScript Arrow Functions Introduction
+
+ES6 has introduced arrow functions which have three main benefits.
+
+1. They have a concise syntax.
+2. They have implicit returns, which allows us to write these nifty one-liners.
+3. They don't rebind the value of `this` when you use a arrow function inside of another function, which is really helpful for when you're doing things like click handlers and whatnot.
+
+
 
 [JavaScript Arrow Functions Introduction](https://wesbos.com/arrow-functions)
