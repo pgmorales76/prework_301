@@ -209,6 +209,25 @@ ES6 has introduced arrow functions which have three main benefits.
 2. They have implicit returns, which allows us to write these nifty one-liners.
 3. They don't rebind the value of `this` when you use a arrow function inside of another function, which is really helpful for when you're doing things like click handlers and whatnot.
 
+So, I've got an array of names:
+
+    const names = ['Wes', 'Kait', 'Lux'];
+
+I want to add 'Bos' to the end of all three of these.
+
+Normally, you'd do something like this:
+
+    const fullNames = names.map(function(name){
+      return `${name} Bos`;
+    });
+    console.log(fullNames); // Wes Bos, Kait Bos, Lux Bos
+
+It's going to give me Wes Bos, Kait Bos, Lux Bos in the entire array. It took this array, transformed it into whatever the item was, plus the name "Bos" on the end.
+
+That makes sense to me, but this isn't an arrow function. Let's take a look at how we could rewrite that.
+
+## Turn it into an Arrow Function
+
 
 
 [JavaScript Arrow Functions Introduction](https://wesbos.com/arrow-functions)
