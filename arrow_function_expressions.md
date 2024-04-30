@@ -180,8 +180,23 @@ To fix this, wrap the object literal in parentheses:
 
 ### Cannot Be Used As Methods
 
+Arrow function expressions should only be used for non-method functions because they do not have their own `this`. Let's see what happens when we try to use them as methods:
 
+    "use strict";
 
-## Examples
+    const obj = {
+      i: 10,
+      b: () => console.log(this.i, this),
+      c() {
+        console.log(this.i, this);
+      },
+    };
+
+    obj.b(); // logs undefined, Window { /* … */ } (or the global object)
+    obj.c(); // logs 10, Object { /* … */ }
+
+The `this` context is not reset within an arrow function. The value of `this` is the same as the `this` of the enclosing scope (the surrounding non-arrow function). If there isn’t a non-arrow function scope surrounding, the `this` context will be, in the browser, the global window object.
+
+This happens because arrow functions retain the `this` value of the enclosing functional scope. Therefore, you will want to avoid using an arrow function in a constructor (where we need the contextual `this` to be the object we are building) or any method that needs to use `this` to behave properly.
 
 [Arrow Function Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
