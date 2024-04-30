@@ -8,6 +8,12 @@ It has some semantic differences and deliberate limitations in usage:
 - Arrow functions cannot be used as constructors. Calling them with `new` throws a `TypeError`. They also don't have access to the `new.target` keyword.
 - Arrow functions cannot use `yield` within their body and cannot be created as generator functions.
 
+ES6 has introduced arrow functions which have three main benefits.
+
+1. They have a concise syntax.
+2. They have implicit returns, which allows us to write these nifty one-liners.
+3. They don't rebind the value of `this` when you use a arrow function inside of another function, which is really helpful for when you're doing things like click handlers and whatnot.
+
 ## Syntax
 
     () => expression
