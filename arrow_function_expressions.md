@@ -228,6 +228,4 @@ That makes sense to me, but this isn't an arrow function. Let's take a look at h
 
 ## Turn it into an Arrow Function
 
-
-
 [JavaScript Arrow Functions Introduction](https://wesbos.com/arrow-functions)
