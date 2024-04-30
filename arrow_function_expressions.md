@@ -200,3 +200,4 @@ The `this` context is not reset within an arrow function. The value of `this` is
 This happens because arrow functions retain the `this` value of the enclosing functional scope. Therefore, you will want to avoid using an arrow function in a constructor (where we need the contextual `this` to be the object we are building) or any method that needs to use `this` to behave properly.
 
 [Arrow Function Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+[JavaScript Arrow Functions Introduction](https://wesbos.com/arrow-functions)
